@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+*{
+    margin: 0;
+ }
+body{
+     background-image: url(./);
+     background-repeat: round;
+	 background-attachment:fixed;
+	 background-size: cover;
+     background-color: #132929;
+     color: #000;
+     font-family: Arial, Helvetica, sans-serif ;
+    }
+
+#hero{
+    width: 100%;
+
+}
+.nav{
+    background-color: #040f0f;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    height: 5px;
+    font-family: sans-serif;
+}
+.logo{
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 30px;
+    
+}
+.nav ul li {
+    list-style-type: none ;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color: #fff;
+}
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.nav ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #bebfc4;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s linear;
+}
+.nav ul li:hover ::after{
+    width: 100%;
+}
+
+.container{
+         background-color: #040f0f;
+         width: 400px;
+         height: 300px;
+         opacity: 95%;
+         align-items: center;
+         margin: auto;
+         justify-content: center;
+         display: block;
+         margin-top: 140px;
+         padding: 16px;
+         border-radius: 15px;
+         color: #fff;
+        }
+input[type=email], input[type=password] {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;  
+        background-color: #040f0f;
+        color: #fff;
+}
+.outline{
+    outline: none;
+}
+button {
+    background-color: #000;
+    color: #fff;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.5s ease;
+}
+button:hover {
+    color: black;
+  background-color: #fff;
+
+}
+#btata{
+       display: flex;
+       justify-content: center;
+       font-size: 20px;
+       
+     }
+#btata a {
+    text-decoration: none;
+    color: #aaa;
+    transition: 0.5s ease;
+}
+#btata a:hover{
+    color: #fff ;
+}
+.h1{
+    text-align: center;
+    font-size: 30px;
+     margin-top: 0;     
+}
+.footer{
+    padding: 100px 0 ;
+    background-color: #040f0f;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+/* the container of the rows and columns to be centered in the footer */
+.footer-container{
+         max-width: 1170px;
+         margin:auto
+}
+
+/* the parent row container so that the items are arranged */
+.row{
+    display: flex;
+    flex-wrap: wrap ;
+}
+/* the footer columns so that the columns have space between them */
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+/* styling the headers */
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+/* to add a line stroke under each title */
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+/* to ensure that every element have a margin between them except the last element of the column  */
+.footer-col ul li:not(last-child){
+    margin-bottom: 10px;
+}
+/* styling the footer links */
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+/* hover transition effect for links in the footer */
+.footer-col ul li a:hover{
+    color: #fff ;
+    padding-left: 10px ;
+
+}
+/* styling the social icons */
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255,255,255,.5) ;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    color: #040f0f ;
+}
+
+/* styling social icons animation */
+.footer-col .social-links a:hover{
+    color: #fff ;
+    background-color: #24262b ;
+}
+.socials{
+    position: absolute;
+    right: 0%;
+}
+    </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Praise&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="hero">
+        <nav>
+            <div class="nav">
+                <span class="logo" style="font-family: 'Dancing Script', 'cursive';" ><a href="../index.html">Décor</a></span>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Content/content.html">Explore</a></li>
+                    <li><a href="login.html">Join-Us</a></li>
+                    <li><a href="../Feedback/feedback.html">Reviews</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="h1">
+        <h1>Log in</h1>
+        </div>
+
+    <div class="container">
+<form action="../Content/content.html">
+        <label for="mail"><b>E-mail</b></label>
+        <input type="email" class="outline" placeholder="Enter your mail" required>
+        <br><br><br>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" class="outline" placeholder="Enter your Password" name="psw" required>
+        <br><br><br>
+            
+        <button type="submit">Login</button>
+    </form>
+      <div id="btata"> <a href="./signUp.html"> create account</a> </div>
+
+     
+
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Décor</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Returns</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="footer-col socials">
+                    <h4>Follow Us</h4>
+    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/TEDxHelwanUniversity" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tedxhelwanuniversity/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </footer>
+</body>
+</html>
